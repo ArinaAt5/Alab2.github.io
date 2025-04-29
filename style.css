@@ -1,0 +1,49 @@
+/*Импорты CSS-файлов */
+@import url("./fonts/fonts.css");
+
+@import url("./styles/header.css");
+@import url("./styles/hero.css");
+@import url("./styles/description.css");
+@import url("./styles/ability.css");
+@import url("./styles/benefits.css");
+@import url("./styles/services.css");
+@import url("./styles/application.css");
+@import url("./styles/footer.css");
+
+/* Стили для элементов html и body */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif, "Roboto";
+}
+
+/* Общие стили для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Класс .page определяет стили для основного контейнера страницы */
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.link:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,117 @@
+.header {
+
+  width: calc(100% - 90px);
+
+  /* Используется flexbox для выравнивания элементов по строкам */
+  display: flex;
+  flex-direction: row;
+  
+  /* Элементы выравниваются по краям */
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.header__logo {
+  /* Устанавливается фоновое изображение для логотипа */
+  background-image: url("../images/logoIcon.svg");
+  background-repeat: no-repeat;
+  /* Фоновое изображение растягивается, чтобы поместиться по размеру блока */
+  background-size: contain;
+  min-width: 200px;
+  height: 50px;
+}
+
+/* Навигационное меню */
+.header__nav {
+  /* Используется flexbox для расположения пунктов меню по строкам */
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+/* Пункт навигации */
+.header__nav-item {
+  font-size: 27px;
+  color: #56463e;
+}
+
+/* Иконки справа */
+.header__icons {
+  /* Используется flexbox для расположения иконок по строкам */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Иконка меню (по умолчанию скрыта) */
+.header__icon-menu {
+  /* Иконка скрыта по умолчанию */
+  display: none;
+  
+  /* Фоновое изображение для иконки меню */
+  background-image: url("../images/menuIcon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+/* Иконка (например, поиск или другие иконки) */
+.header__icon {
+  /* Фоновое изображение для иконки */
+  background-image: url("../images/icons.svg");
+  background-repeat: no-repeat;
+  
+  /* Фоновое изображение растягивается по размеру блока */
+  background-size: contain;
+  width: 132px;
+  height: 37px;
+}
+
+/* Медиа-запрос для экранов с шириной меньше 1100px */
+@media screen and (max-width: 1100px) {
+
+  .header__nav {
+    gap: 25px;
+  }
+  .header__nav-item {
+    font-size: 15px;
+  }
+}
+
+/* Медиа-запрос для экранов с шириной меньше 768px (мобильные устройства) */
+@media screen and (max-width: 768px) {
+  .header {
+    width: calc(100% - 20px);
+  }
+  
+  /* Скрываем навигацию */
+  .header__nav {
+    display: none;
+  }
+  .header__logo {
+    min-width: 183px;
+    height: 42px;
+  }
+
+  .header__icon-menu {
+    display: block;
+  }
+}
+
+/* Медиа-запрос для экранов с шириной меньше 380px (очень маленькие экраны) */
+@media screen and (max-width: 380px) {
+  /* Ширина хедера уменьшается, а также отступы сверху увеличиваются */
+  .header {
+    width: calc(100% - 50px);
+    margin: 30px 0 0;
+  }
+
+  /* Скрываем основную иконку */
+  .header__icon {
+    display: none;
+  }
+}

@@ -1,0 +1,152 @@
+.application {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1440px;
+  width: 100%;
+  height: 456px;
+  background-image: url("../images/applicationImage.svg ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 102px;
+
+  align-items: center;
+}
+
+.application__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  font-size: 70px;
+  text-align: center;
+  margin: 60px 0 150px;
+  letter-spacing: 4px;
+}
+
+.application__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 71px;
+  width: 100%;
+}
+
+.application__input {
+  max-width: 728px;
+  width: 728px;
+  background-color: transparent;
+  border: 4px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+}
+
+.application__input::placeholder {
+  color: #fff;
+}
+
+.application__button {
+  width: 405px;
+  height: 67px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  color: #56463e;
+  font-size: 30px;
+  margin: auto 0;
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: 900px) {
+  .application__title {
+    font-size: 45px;
+  }
+
+  .application__input {
+    width: 400px;
+    font-size: 30px;
+  }
+
+  .application__button {
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .application {
+    height: 425px;
+    margin-bottom: 40px;
+  }
+
+  .application__title {
+    font-size: 50px;
+    margin: 35px 0 80px;
+  }
+
+  .application__form {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0 75px;
+    width: calc(100% - 150px);
+  }
+
+  .application__input {
+    width: 100%;
+    height: 64px;
+    margin-bottom: 60px;
+  }
+
+  .application__button {
+    width: 253px;
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .application {
+    height: 500px;
+  }
+
+  .application__input {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .application {
+    height: 382px;
+    margin-bottom: 95px;
+  }
+
+  .application__title {
+    font-size: 30px;
+    letter-spacing: 0;
+    margin: 60px 0 54px;
+  }
+
+  .application__form {
+    padding: 0 19px;
+    width: calc(100% - 38px);
+  }
+
+  .application__input {
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 67px;
+  }
+
+  .application__button {
+    width: 187px;
+    height: 42px;
+    font-size: 23px;
+    letter-spacing: 0;
+  }
+}

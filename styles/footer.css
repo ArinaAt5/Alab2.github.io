@@ -1,0 +1,135 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 28px 33px 64px;
+  background-color: #c5b9aa;
+  width: calc(100% - 66px);
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer__contacts-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.footer__contacts-title {
+  font-size: 30px;
+  color: #fff;
+}
+
+.footer__contacts-text {
+  font-size: 25px;
+  color: #fff;
+}
+
+.footer__etc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__logo {
+  background-image: url("../images/logoIcon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 50px;
+}
+
+.footer__copyright-text {
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 910px) {
+  .footer__contacts {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 28px 50px;
+    width: calc(100% - 100px);
+    height: auto;
+  }
+
+  .footer__contacts {
+    gap: 30px;
+    /* margin-bottom: 103px; */
+  }
+
+  .footer__contacts-item {
+    gap: 12px;
+  }
+
+  .footer__etc {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__logo {
+    width: 151px;
+    height: 48px;
+  }
+
+  .footer__copyright-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer__contacts-title {
+    font-size: 15px;
+  }
+
+  .footer__contacts-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 26px 20px 12px;
+    width: calc(100% - 40px);
+  }
+
+  .footer__contacts {
+    gap: 33px;
+  }
+
+  .footer__contacts-item {
+    gap: 6px;
+  }
+
+  .footer__contacts-title {
+    font-size: 20px;
+  }
+
+  .footer__contacts-text {
+    font-size: 18px;
+  }
+
+  .footer__etc {
+    gap: 5px;
+  }
+
+  .footer__logo {
+    width: 136px;
+  }
+
+  .footer__copyright-text {
+    font-size: 20px;
+  }
+}
